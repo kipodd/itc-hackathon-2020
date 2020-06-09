@@ -1,79 +1,23 @@
-.App {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100vw;
-  height: 105vh;
+body {
+  font-family: monospace;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.navbar {
-  background-color: lightcoral;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-}
-
-.navbar-item {
-  color: white;
-  text-decoration: none;
-  padding-right: 30px;
-  font-size: 20px;
-}
-
-.SignUpAndLogIn {
-  margin-left: auto;
-  margin-right: 3%;
-}
-
-.ProfilePageImage {
-  width: 350px;
-  height: 350px;
-  border-radius: 100px;
-  margin-left: 2%;
-}
-
-.ProfilePageDetails {
-  display: flex;
-}
-
-.ProfilePageUserInfo {
-  margin-left: 3%;
-}
-
-.ProfilePageCalendar {
-  display: flex;
-  margin-left: 25%;
-  margin-top: 2%;
-  font-family: arial, helvetica;
-  font-weight: 600;
-}
-
-.ProfilePageCalendarIcon {
-  width: 20px;
-  height: 20px;
-  margin-top: 1%;
-  margin-right: 2%;
-}
-
-.ProfilePageJoiningDate {
-  margin-top: 3%;
+textarea {
+  height: 900px;
 }
 
 .ProfilePageName {
   margin-left: 2%;
-  color: #6B1E69;
+  color: #6b1e69;
   text-align: center;
-  border-bottom: solid 2px #6B1E69;
+  border-bottom: solid 2px #6b1e69;
 }
 
 .ProfilePageBio {
   color: #424242;
-  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
+    serif;
   letter-spacing: 0.1em;
   margin: 40px auto;
   text-transform: lowercase;
