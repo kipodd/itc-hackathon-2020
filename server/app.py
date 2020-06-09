@@ -17,6 +17,14 @@ def get_all_projects():
     )
 
 
+
+@app.route("/projects/<string:project_id>")
+def get_project(project_id):
+    project = projects_collection.get_project(project_id)
+    return project.to_json(), 200, {"Content-Type": "application/json"}
+
+
+
 @app.route("/projects", methods=["POST"])
 def set_project():
     print(1)
