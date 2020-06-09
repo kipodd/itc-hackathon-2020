@@ -1,10 +1,11 @@
-import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ProfilePage from "./components/ProfilePage";
 import FeedPage from "./components/FeedPage";
+import React, { useState } from "react";
+import AddNewProject from "./components/addProjectForm";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
