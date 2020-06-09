@@ -29,3 +29,57 @@
   margin-left: auto;
   margin-right: 3%;
 }
+
+.ProfilePageImage {
+  width: 350px;
+  height: 350px;
+  border-radius: 100px;
+  margin-left: 2%;
+}
+
+.ProfilePageDetails {
+  display: flex;
+}
+
+.ProfilePageUserInfo {
+  margin-left: 3%;
+}
+
+.ProfilePageCalendar {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-family: arial, helvetica;
+  font-weight: 600;
+}
+
+.ProfilePageCalendarIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.ProfilePageJoiningDate {
+  margin-top: 3%;
+}
+
+.ProfilePageName {
+  margin-left: 2%;
+  color: #6B1E69;
+  text-align: center;
+  border-bottom: solid 2px #6B1E69;
+}
+
+.ProfilePageBio {
+  color: #424242;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  letter-spacing: 0.1em;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 20pt;
+  font-variant: small-caps;
+  text-align: center;
+  margin-top: 3%;
+}

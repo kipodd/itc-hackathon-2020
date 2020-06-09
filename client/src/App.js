@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ProfilePage from "./components/ProfilePage";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
               <h1> Login </h1>
             </Route>
             <Route path="/ProfilePage">
-              <h1> Profile Page </h1>
+              <ProfilePage></ProfilePage>
             </Route>
             <Route path="/">
               <h1> Feed of Job Opportunities</h1>
