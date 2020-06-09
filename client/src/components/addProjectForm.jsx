@@ -24,24 +24,17 @@ const AddNewProject = (props) => {
   const [endTime, setEndTime] = useState(null);
   const [formSubmit, setFormSubmit] = useState(null);
 
-  // console.log(startTime);
-  // console.log(endTime);
-  // console.log(formSubmit);
-
   const handleSubmitForm = (e) => {
     e.preventDefault();
     prepareFormData();
   };
   const prepareFormData = () => {
-    const convertedStartDate = JSON.stringify(new Date(startTime));
-    const convertedEndDate = JSON.stringify(new Date(endTime));
-
     let dataToPost = {
       name: projectName,
       city: projectLocation,
       description: projectDescription,
-      start_time: convertedStartDate,
-      end_time: convertedEndDate,
+      start_time: startTime,
+      end_time: endTime,
     };
     console.log(dataToPost);
     let response = postNewProject(dataToPost).then((data) => {
@@ -50,7 +43,7 @@ const AddNewProject = (props) => {
   };
 
   return (
-    <div className='mt-5'>
+    <div className='mt-5 container'>
       <h1 className='mt-5'> Register your project</h1>
       <form
         className='text-left mt-5'

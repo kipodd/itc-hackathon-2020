@@ -23,11 +23,17 @@ function App(props) {
               <Link className='navbar-item' to='/Login'>
                 Login
               </Link>
+              <Link className='navbar-item' to='/add_project'>
+                add new project
+              </Link>
             </div>
           </div>
           <Switch>
             <Route path='/register'>
               <h1> Register </h1>
+            </Route>
+            <Route path='/add_project'>
+              <AddNewProject></AddNewProject>
             </Route>
             <Route path='/login'>
               <h1> Login </h1>
