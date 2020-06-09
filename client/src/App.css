@@ -35,10 +35,12 @@
   height: 350px;
   border-radius: 100px;
   margin-left: 2%;
+  margin-top: 5%;
 }
 
 .ProfilePageDetails {
   display: flex;
+  margin-top: 1%;
 }
 
 .ProfilePageUserInfo {
@@ -60,7 +62,26 @@
   margin-right: 2%;
 }
 
+.ProfilePageLocation {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-family: arial, helvetica;
+  font-weight: 600;
+}
+
+.ProfilePageLocationIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
 .ProfilePageJoiningDate {
+  margin-top: 3%;
+}
+
+.ProfilePagelocationDate {
   margin-top: 3%;
 }
 
@@ -80,6 +101,15 @@
   line-height: 145%;
   font-size: 20pt;
   font-variant: small-caps;
+  margin-top: 10%;
+}
+
+.ProfilePageInterests {
   text-align: center;
-  margin-top: 3%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.ProfilePageCards {
+  display: flex;
 }

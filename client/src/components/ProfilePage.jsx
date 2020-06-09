@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import calendar from "./calendar.png";
+import location from "./location.png";
 
 class Student extends React.Component {
   constructor(props) {
@@ -38,6 +39,10 @@ class Student extends React.Component {
             <img className="ProfilePageCalendarIcon" src={calendar}></img>
             <a className="ProfilePageJoiningDate"> Joined: July 2011 </a>
           </div>
+          <div className="ProfilePageLocation">
+            <img className="ProfilePageLocationIcon" src={location}></img>
+            <a className="ProfilePagelocationDate"> Location: Tel Aviv </a>
+          </div>
         </div>
         <div className="ProfilePageUserInfo">
           <h1 className="ProfilePageBio">
@@ -46,7 +51,26 @@ class Student extends React.Component {
             repellendus incidunt? Odio recusandae harum at vel laborum in
             officiis delectus quae.
           </h1>
+          <h1>Interests</h1>
+          <div className="ProfilePageCards">
+            <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
+              <div class="card-body ProfilePageInterests">
+                <p class="card-text">Teaching German</p>
+              </div>
+            </div>
+            <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
+              <div class="card-body ProfilePageInterests">
+                <p class="card-text">Helping A Child</p>
+              </div>
+            </div>
+            <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
+              <div class="card-body ProfilePageInterests">
+                <p class="card-text"> Coding for NGO</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     );
   }
