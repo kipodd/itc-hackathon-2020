@@ -1,0 +1,18 @@
+### get all projects
+GET http://localhost:5000/projects
+
+### get student
+GET http://localhost:5000/projects/5ede8f9a4d07494eff6ac5d1
+
+
+### set student
+POST http://localhost:5000/projects HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Project 1",
+  "city": "Tel Aviv",
+  "description": "Some Description",
+  "start_time": "2013-06-03 13:04:22.976182",
+  "end_time": "2013-06-03 13:04:22.976182"
+}

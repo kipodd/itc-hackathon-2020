@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 105vh;
 }
 
 .App-logo {
@@ -7,32 +11,75 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: lightcoral;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-item {
   color: white;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.SignUpAndLogIn {
+  margin-left: auto;
+  margin-right: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProfilePageImage {
+  width: 350px;
+  height: 350px;
+  border-radius: 100px;
+  margin-left: 2%;
+}
+
+.ProfilePageDetails {
+  display: flex;
+}
+
+.ProfilePageUserInfo {
+  margin-left: 3%;
+}
+
+.ProfilePageCalendar {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-family: arial, helvetica;
+  font-weight: 600;
+}
+
+.ProfilePageCalendarIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.ProfilePageJoiningDate {
+  margin-top: 3%;
+}
+
+.ProfilePageName {
+  margin-left: 2%;
+  color: #6B1E69;
+  text-align: center;
+  border-bottom: solid 2px #6B1E69;
+}
+
+.ProfilePageBio {
+  color: #424242;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+  letter-spacing: 0.1em;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 20pt;
+  font-variant: small-caps;
+  text-align: center;
+  margin-top: 3%;
 }
