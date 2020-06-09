@@ -10,7 +10,7 @@ POST http://localhost:5000/projects HTTP/1.1
 content-type: application/json
 
 {
-  "name": "Ron Weasley",
+  "name": "Project 1",
   "city": "Tel Aviv",
   "description": "Some Description",
   "start_time": "2013-06-03 13:04:22.976182",
