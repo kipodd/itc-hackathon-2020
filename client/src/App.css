@@ -3,8 +3,85 @@ body {
   font-size: 16px;
 }
 
-textarea {
-  height: 900px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navbar {
+  background-color: lightcoral;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.SignUpAndLogIn {
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+.ProfilePageImage {
+  width: 350px;
+  height: 350px;
+  border-radius: 100px;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.ProfilePageDetails {
+  display: flex;
+  margin-top: 1%;
+}
+
+.ProfilePageUserInfo {
+  margin-left: 3%;
+  width: 60%;
+  text-align: justify;
+}
+
+.ProfilePageCalendar {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-family: arial, helvetica;
+  font-weight: 600;
+}
+
+.ProfilePageCalendarIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.ProfilePageLocation {
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2%;
+  font-family: arial, helvetica;
+  font-weight: 600;
+}
+
+.ProfilePageLocationIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.ProfilePageJoiningDate {
+  margin-top: 3%;
+}
+
+.ProfilePagelocationDate {
+  margin-top: 3%;
 }
 
 .ProfilePageName {
@@ -19,11 +96,20 @@ textarea {
   font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
     serif;
   letter-spacing: 0.1em;
-  margin: 40px auto;
+  margin: auto;
   text-transform: lowercase;
-  line-height: 145%;
+  /* line-height: 145%; */
   font-size: 20pt;
   font-variant: small-caps;
+  margin-top: 10%;
+}
+
+.ProfilePageInterests {
   text-align: center;
-  margin-top: 3%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.ProfilePageCards {
+  display: flex;
 }

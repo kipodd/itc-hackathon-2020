@@ -9,7 +9,6 @@ CORS(app)
 
 projects_collection = ProjectsDataLayer()
 
-
 @app.route("/projects")
 def get_all_projects():
     all_projects = projects_collection.get_all_projects()

@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
 // import axios, * as others from "axios";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { withRouter } from "react-router-dom";
-import calendar from "./calendar.png";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import calendar from './calendar.png';
+import location from './location.png';
 
 class Student extends React.Component {
   constructor(props) {
@@ -27,25 +28,47 @@ class Student extends React.Component {
 
   render() {
     return (
-      <div className="ProfilePageDetails">
+      <div className='ProfilePageDetails container'>
         <div>
-          <h3 className="ProfilePageName"> Itzik Pazuelo</h3>
+          <h3 className='ProfilePageName'> Itzik Pazuelo</h3>
           <img
-            className="ProfilePageImage"
-            src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-9/1452239_10153612362700327_2002053524_n.jpg?_nc_cat=104&_nc_sid=e007fa&_nc_oc=AQkLeWMMwe4uC4Sbtu473_ga4AUn94rvKJx9t3lDVrlW5nC6kgNfkhWi2CieWU6upiA&_nc_ht=scontent.ftlv5-1.fna&oh=03db35b499334a694fbf4eac161733f1&oe=5F03FB27"
+            className='ProfilePageImage'
+            src='https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-9/1452239_10153612362700327_2002053524_n.jpg?_nc_cat=104&_nc_sid=e007fa&_nc_oc=AQkLeWMMwe4uC4Sbtu473_ga4AUn94rvKJx9t3lDVrlW5nC6kgNfkhWi2CieWU6upiA&_nc_ht=scontent.ftlv5-1.fna&oh=03db35b499334a694fbf4eac161733f1&oe=5F03FB27'
           ></img>
-          <div className="ProfilePageCalendar">
-            <img className="ProfilePageCalendarIcon" src={calendar}></img>
-            <a className="ProfilePageJoiningDate"> Joined: July 2011 </a>
+          <div className='ProfilePageCalendar'>
+            <img className='ProfilePageCalendarIcon' src={calendar}></img>
+            <a className='ProfilePageJoiningDate'> Joined: July 2011 </a>
+          </div>
+          <div className='ProfilePageLocation'>
+            <img className='ProfilePageLocationIcon' src={location}></img>
+            <a className='ProfilePagelocationDate'> Location: Tel Aviv </a>
           </div>
         </div>
-        <div className="ProfilePageUserInfo">
-          <h1 className="ProfilePageBio">
+        <div className='ProfilePageUserInfo'>
+          <div className='ProfilePageBio container'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quas
             ipsa aliquam impedit laboriosam unde eius perferendis exercitationem
             repellendus incidunt? Odio recusandae harum at vel laborum in
             officiis delectus quae.
-          </h1>
+          </div>
+          <h1>Interests</h1>
+          <div className='ProfilePageCards'>
+            <div class='card ProfilePageInterests' style={{ width: '18rem' }}>
+              <div class='card-body ProfilePageInterests'>
+                <p class='card-text'>Teaching German</p>
+              </div>
+            </div>
+            <div class='card ProfilePageInterests' style={{ width: '18rem' }}>
+              <div class='card-body ProfilePageInterests'>
+                <p class='card-text'>Helping A Child</p>
+              </div>
+            </div>
+            <div class='card ProfilePageInterests' style={{ width: '18rem' }}>
+              <div class='card-body ProfilePageInterests'>
+                <p class='card-text'> Coding for NGO</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
