@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import AddNewProject from "./components/addProjectForm";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
+import SeacrhBar from "./components/SearchField";
 
 function App(props) {
   return (
@@ -53,7 +54,7 @@ function App(props) {
             <h1>create a project</h1>
           </Route>
           <Route path="/">
-            <h1> Find A Volunteering Opportunity Now!</h1>
+            <SeacrhBar />
             <FeedPage></FeedPage>
           </Route>
         </Switch>

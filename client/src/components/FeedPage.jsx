@@ -1,10 +1,8 @@
 import React from "react";
-import axios, * as others from "axios";
+import axios from "axios";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
+  
   withRouter,
 } from "react-router-dom";
 import volunteer from "./volunteer.jpg";
@@ -34,7 +32,7 @@ class FeedPage extends React.Component {
     return (
       <div>
         {this.state.data && (
-          <div className="list_students">
+          <div className='list_students'>
             {this.state.data.map((user) => {
               return (
                 // <div class="card student">
