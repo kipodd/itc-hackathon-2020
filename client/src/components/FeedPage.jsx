@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import axios, * as others from "axios";
 import {
@@ -8,6 +9,12 @@ import {
   withRouter,
 } from "react-router-dom";
 import volunteer from "./volunteer.jpg";
+=======
+import React from 'react';
+import axios, * as others from 'axios';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+>>>>>>> search-for-project-feature
 
 class FeedPage extends React.Component {
   constructor(props) {
@@ -21,6 +28,7 @@ class FeedPage extends React.Component {
   };
 
   getstudents = () => {
+<<<<<<< HEAD
     axios.get("http://localhost:5000/projects").then((response) => {
       this.setState({
         data: Object.values(response.data),
@@ -28,15 +36,28 @@ class FeedPage extends React.Component {
       const convertedDate = new Date(response.data[0].start_time.$date);
       console.log(convertedDate);
     });
+=======
+    axios
+      .get('http://localhost:5000/projects')
+      .then((response) => {
+        const userdata = response.data;
+        console.log(userdata);
+        this.setState({ data: userdata.data });
+        console.log(this.state.data);
+        return response.json;
+      })
+      .catch(() => {});
+>>>>>>> search-for-project-feature
   };
 
   render() {
     return (
       <div>
         {this.state.data && (
-          <div className="list_students">
+          <div className='list_students'>
             {this.state.data.map((user) => {
               return (
+<<<<<<< HEAD
                 // <div class="card student">
                 //   <p> Name Of The Project: {user.name} </p>
                 //   <p> Location: {user.city} </p>
@@ -63,6 +84,12 @@ class FeedPage extends React.Component {
                       <img class="FeedPageImage" src={volunteer}></img>
                     </div>
                   </div>
+=======
+                <div className='student'>
+                  <p> Name: {user.name}</p>
+                  <p> StudentID: {user._id}</p>
+                  <p> Desired_Skills: {user.user_skills}</p>
+>>>>>>> search-for-project-feature
                 </div>
               );
             })}
