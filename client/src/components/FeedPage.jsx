@@ -1,7 +1,7 @@
-import React from "react";
-import axios, * as others from "axios";
+import React from 'react';
+import axios, * as others from 'axios';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class FeedPage extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class FeedPage extends React.Component {
 
   getstudents = () => {
     axios
-      .get("http://localhost:5000/projects")
+      .get('http://localhost:5000/projects')
       .then((response) => {
         const userdata = response.data;
         console.log(userdata);
@@ -24,19 +24,17 @@ class FeedPage extends React.Component {
         console.log(this.state.data);
         return response.json;
       })
-      .catch(() => {
-        alert("Retriving data");
-      });
+      .catch(() => {});
   };
 
   render() {
     return (
       <div>
         {this.state.data && (
-          <div className="list_students">
+          <div className='list_students'>
             {this.state.data.map((user) => {
               return (
-                <div className="student">
+                <div className='student'>
                   <p> Name: {user.name}</p>
                   <p> StudentID: {user._id}</p>
                   <p> Desired_Skills: {user.user_skills}</p>

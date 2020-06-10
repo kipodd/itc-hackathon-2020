@@ -10,6 +10,7 @@ import ProfilePage from './components/ProfilePage';
 import FeedPage from './components/FeedPage';
 import React, { useState } from 'react';
 import AddNewProject from './components/addProjectForm';
+import SeacrhBar from './components/SearchField';
 
 function App(props) {
   return (
@@ -51,7 +52,7 @@ function App(props) {
             <h1>create a project</h1>
           </Route>
           <Route path='/'>
-            <h1> Feed of Job Opportunities</h1>
+            <SeacrhBar />
             <FeedPage></FeedPage>
           </Route>
         </Switch>
