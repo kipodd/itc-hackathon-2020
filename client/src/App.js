@@ -6,7 +6,6 @@ import {
   NavLink,
 } from 'react-router-dom';
 import ProfilePage from './components/ProfilePage';
-import FeedPage from './components/FeedPage';
 import React, { useState } from 'react';
 import AddNewProject from './components/addProjectForm';
 import SignUp from './components/SignUp';
@@ -53,8 +52,7 @@ function App(props) {
             <h1>create a project</h1>
           </Route>
           <Route path='/'>
-            <SeacrhBar></SeacrhBar>
-            <FeedPage></FeedPage>
+            <SeacrhBar />
           </Route>
         </Switch>
       </Router>

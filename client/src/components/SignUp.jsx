@@ -11,6 +11,7 @@ import {
   DateTimePicker,
 } from "@material-ui/pickers";
 import { postNewProject } from "../lib/api";
+import plussign from "./plussign.png";
 
 const AddNewProject = (props) => {
   const [projectName, setProjectName] = useState("");
@@ -89,7 +90,7 @@ const AddNewProject = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>Interests</label>
+          <label>Interests 1</label>
           <input
             type="text"
             className="form-control"
@@ -98,6 +99,32 @@ const AddNewProject = (props) => {
               setProjectLocation(event.target.value);
             }}
           />
+        </div>
+        <div className="form-group">
+          <label>Interests 2</label>
+          <input
+            type="text"
+            className="form-control"
+            id="project-location"
+            onChange={(event) => {
+              setProjectLocation(event.target.value);
+            }}
+          />
+        </div>
+        <div className="form-group">
+          <label>Interests 3</label>
+          <input
+            type="text"
+            className="form-control"
+            id="project-location"
+            onChange={(event) => {
+              setProjectLocation(event.target.value);
+            }}
+          />
+        </div>
+        <div className="AddMore">
+          <p1>To add More Interest</p1>
+          <i class="fa fa-plus PlusSign"></i>
         </div>
         <div className="mt-5 d-flex justify-content-center">
           <Button variant="contained" color="primary" type="submit">

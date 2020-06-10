@@ -66,42 +66,9 @@ const AddNewProject = (props) => {
             }}
           />
         </div>
-        <div className="form-group">
-          <label>Bio</label>
-          <textarea
-            className="form-control mb-3"
-            id="exampleFormControlTextarea1"
-            rows="8"
-            onChange={(e) => {
-              setProjectDescription(e.target.value);
-            }}
-          ></textarea>
-        </div>
-        <div className="form-group">
-          <label>Location</label>
-          <input
-            type="text"
-            className="form-control"
-            id="project-location"
-            onChange={(event) => {
-              setProjectLocation(event.target.value);
-            }}
-          />
-        </div>
-        <div className="form-group">
-          <label>Interests</label>
-          <input
-            type="text"
-            className="form-control"
-            id="project-location"
-            onChange={(event) => {
-              setProjectLocation(event.target.value);
-            }}
-          />
-        </div>
         <div className="mt-5 d-flex justify-content-center">
           <Button variant="contained" color="primary" type="submit">
-            Submit your project
+            LOG IN
           </Button>
         </div>
       </form>
