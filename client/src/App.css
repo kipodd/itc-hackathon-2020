@@ -93,15 +93,21 @@ body {
 
 .ProfilePageBio {
   color: #424242;
-  font-family: 'Adobe Caslon Pro', 'Hoefler Text', Georgia, Garamond, Times,
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times,
     serif;
   letter-spacing: 0.1em;
   margin: auto;
-  text-transform: lowercase;
-  /* line-height: 145%; */
+  /* text-transform: lowercase; */
+  line-height: 145%;
   font-size: 20pt;
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
   margin-top: 10%;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.ProfilePageBio::first-letter {
+  text-transform: capitalize;
 }
 
 .ProfilePageInterests {
@@ -124,4 +130,13 @@ body {
 .FeedPageImage {
   width: 220px;
   height: 140px;
+}
+
+.AddMore {
+  display: flex;
+}
+
+.PlusSign {
+  margin-left: 2%;
+  margin-top: 0.3%;
 }

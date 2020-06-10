@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import calendar from "./calendar.png";
 import location from "./location.png";
+import Greta from "./Greta.jpg";
 
 class Student extends React.Component {
   constructor(props) {
@@ -30,14 +31,11 @@ class Student extends React.Component {
     return (
       <div className="ProfilePageDetails container">
         <div>
-          <h3 className="ProfilePageName"> Itzik Pazuelo</h3>
-          <img
-            className="ProfilePageImage"
-            src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-9/1452239_10153612362700327_2002053524_n.jpg?_nc_cat=104&_nc_sid=e007fa&_nc_oc=AQkLeWMMwe4uC4Sbtu473_ga4AUn94rvKJx9t3lDVrlW5nC6kgNfkhWi2CieWU6upiA&_nc_ht=scontent.ftlv5-1.fna&oh=03db35b499334a694fbf4eac161733f1&oe=5F03FB27"
-          ></img>
+          <h3 className="ProfilePageName"> Greta Feldman </h3>
+          <img className="ProfilePageImage" src={Greta}></img>
           <div className="ProfilePageCalendar">
             <img className="ProfilePageCalendarIcon" src={calendar}></img>
-            <a className="ProfilePageJoiningDate"> Joined: July 2011 </a>
+            <a className="ProfilePageJoiningDate"> Joined: June 2020 </a>
           </div>
           <div className="ProfilePageLocation">
             <img className="ProfilePageLocationIcon" src={location}></img>
@@ -46,26 +44,26 @@ class Student extends React.Component {
         </div>
         <div className="ProfilePageUserInfo">
           <div className="ProfilePageBio container">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quas
-            ipsa aliquamn impedit laboriosam unde eius perferendis
-            exercitationem repellendus incidunt? Odio recusandae harum at vel
-            laborum in officiis delectus quae.
+            I am 17 years old world-renowned Swedish environmental activist. In
+            the post corona world, people realized the importance of community
+            engagement more than ever! I love this app because this allows me to
+            volunteer easily anytime I want!
           </div>
           <div className="ProfilePageInterestHeadline">Interests</div>
           <div className="ProfilePageCards">
             <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
               <div class="card-body ProfilePageInterests">
-                <p class="card-text">Teaching German</p>
+                <p class="card-text">Teaching Sweedish</p>
               </div>
             </div>
             <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
               <div class="card-body ProfilePageInterests">
-                <p class="card-text">Helping A Child</p>
+                <p class="card-text">Collecting Garbage When I run</p>
               </div>
             </div>
             <div class="card ProfilePageInterests" style={{ width: "18rem" }}>
               <div class="card-body ProfilePageInterests">
-                <p class="card-text"> Coding for NGO</p>
+                <p class="card-text"> Help Old Women With Groceries</p>
               </div>
             </div>
           </div>
