@@ -5,5 +5,5 @@ export const postNewProject = (data) => {
 };
 
 export const SearchNewProject = (data) => {
-  return axios.get('http://localhost:5000/search', data);
+  return axios.post('http://localhost:5000/search', data);
 };

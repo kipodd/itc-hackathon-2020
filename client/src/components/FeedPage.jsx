@@ -15,7 +15,7 @@ class FeedPage extends React.Component {
 
   componentDidMount = () => {
     this.getstudents();
-    console.log(this.props.searchResult);
+    console.log(this.props.searchData);
     const toggle = this.props.toggle;
     const searchResult = this.props.searchData;
     this.setState({ toggleRender: toggle, searchData: searchResult });
