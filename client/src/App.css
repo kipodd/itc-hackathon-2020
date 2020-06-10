@@ -41,7 +41,7 @@ body {
 }
 
 .ProfilePageUserInfo {
-  margin-left: 3%;
+  margin-left: 10%;
   width: 60%;
   text-align: justify;
 }
@@ -106,10 +106,22 @@ body {
 
 .ProfilePageInterests {
   text-align: center;
-  margin-right: 5%;
   margin-top: 2%;
 }
 
 .ProfilePageCards {
   display: flex;
+}
+
+.ProfilePageInterestHeadline {
+  margin-left: 2%;
+  color: #6b1e69;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: solid 2px #6b1e69;
+}
+
+.FeedPageImage {
+  width: 220px;
+  height: 140px;
 }
