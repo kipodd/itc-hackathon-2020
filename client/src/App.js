@@ -18,36 +18,43 @@ function App(props) {
       <Router>
         <nav className='navbar'>
           <NavLink className='navbar-item' to='/'>
-            Home Page
+            Home
           </NavLink>
-          <NavLink className='navbar-item' to='/ProfilePage'>
+          {/* <NavLink className="navbar-item" to="/ProfilePage">
             Profile
-          </NavLink>
+          </NavLink> */}
           <NavLink className='navbar-item' to='/add_project'>
             Add New Project
           </NavLink>
           <div className='SignUpAndLogIn'>
-            <NavLink className='navbar-item' to='/SignUp'>
-              Sign Up
+            <NavLink className='navbar-item' to='/Profile'>
+              Greta Feldman
             </NavLink>
-            <NavLink className='navbar-item' to='/Login'>
-              Login
+            <NavLink className='navbar-item' to='/Logout'>
+              Log Out
             </NavLink>
           </div>
         </nav>
         <Switch>
-          <Route path='/SignUp'>
-            <SignUp></SignUp>
+          <Route path='/Profile'>
+            <ProfilePage></ProfilePage>>
           </Route>
           <Route path='/add_project'>
             <AddNewProject></AddNewProject>
           </Route>
-          <Route path='/login'>
+          <Route path='/Logout'>
+            <br></br>
+            <h1>
+              We are upset that you are leaving us! Looking forward to seeing
+              you again
+            </h1>
+          </Route>
+          {/* <Route path="/login">
             <Login></Login>
-          </Route>
-          <Route path='/ProfilePage'>
+          </Route> */}
+          {/* <Route path="/ProfilePage">
             <ProfilePage></ProfilePage>
-          </Route>
+          </Route> */}
           <Route path='/Createproject'>
             <h1>create a project</h1>
           </Route>

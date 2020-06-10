@@ -35,7 +35,7 @@ const SeacrhBar = () => {
     <>
       <form>
         <div className='mt-5 d-flex justify-content-center'>
-          <h3>Volunt-here!</h3>
+          <h3>VoluntHere!</h3>
         </div>
         <div className='input-group mb-3 mt-1 d-flex justify-content-center '>
           <input

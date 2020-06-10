@@ -1,8 +1,10 @@
+import ssl
+
 import pymongo
 from bson import ObjectId
+
 import project
 from password import password
-import ssl
 
 
 class ProjectsDataLayer:
@@ -13,6 +15,12 @@ class ProjectsDataLayer:
         )
         db = client.volunteer_today
         self.__projects_collection = db.projects
+        self.__ml_projects_collection = db.ml_projects
+
+    def search(self, query):
+        decoded = query.decode("utf-8")
+        a = list(self.__ml_projects_collection.find({"category": decoded}).limit(10))
+        return a
 
     def get_all_projects(self):
         return list(self.__projects_collection.find())
