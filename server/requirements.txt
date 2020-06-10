@@ -23,8 +23,5 @@ typed-ast==1.4.1
 Werkzeug==1.0.1
 wrapt==1.12.1
 pandas==1.0.3
-scikit-learn>=0.22.1
-nltk==3.5
 numpy==1.18.1
-scipy==1.4.1
 tensorflow==2.1.0
