@@ -16,8 +16,6 @@ const AddNewProject = (props) => {
   const [projectName, setProjectName] = useState("");
   const [projectDescription, setProjectDescription] = useState(null);
   const [projectLocation, setProjectLocation] = useState(null);
-  const [startTime, setStartTime] = useState(null);
-  const [endTime, setEndTime] = useState(null);
   const [formSubmit, setFormSubmit] = useState(null);
 
   const handleSubmitForm = (e) => {
@@ -29,8 +27,6 @@ const AddNewProject = (props) => {
       name: projectName,
       city: projectLocation,
       description: projectDescription,
-      start_time: startTime,
-      end_time: endTime,
     };
     console.log(dataToPost);
     let response = postNewProject(dataToPost).then((data) => {
@@ -40,7 +36,7 @@ const AddNewProject = (props) => {
 
   return (
     <div className="mt-5 container">
-      <h1 className="mt-5"> Register Your Volunteering Project!</h1>
+      <h1 className="mt-5"> Register MicroVolunteer Now!</h1>
       <form
         className="text-left mt-5"
         type="submit"
@@ -49,7 +45,7 @@ const AddNewProject = (props) => {
         }}
       >
         <div className="form-group">
-          <label>Project Name</label>
+          <label>Account Name</label>
           <input
             type="text"
             className="form-control"
@@ -60,7 +56,18 @@ const AddNewProject = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>Description</label>
+          <label> Select A Password </label>
+          <input
+            type="text"
+            className="form-control"
+            id="exampleFormControlInput1"
+            onChange={(event) => {
+              setProjectName(event.target.value);
+            }}
+          />
+        </div>
+        <div className="form-group">
+          <label>Bio</label>
           <textarea
             className="form-control mb-3"
             id="exampleFormControlTextarea1"
@@ -81,39 +88,17 @@ const AddNewProject = (props) => {
             }}
           />
         </div>
-        <MuiPickersUtilsProvider utils={DateFnsUtils}>
-          <Grid container justify="space-around">
-            <DateTimePicker
-              margin="normal"
-              required
-              disablePast
-              placeholder="choose start date"
-              id="date-picker-dialog-start"
-              label="Start Time"
-              value={startTime}
-              onChange={(date) => setStartTime(date)}
-              KeyboardButtonProps={{
-                "aria-label": "change start date",
-              }}
-            />
-            <DateTimePicker
-              margin="normal"
-              required
-              label="End Time"
-              placeholder="choose end date"
-              id="time-picker-end"
-              label="End Time"
-              value={endTime}
-              minDate={startTime}
-              onChange={(time) => {
-                setEndTime(time);
-              }}
-              KeyboardButtonProps={{
-                "aria-label": "change start time",
-              }}
-            />
-          </Grid>
-        </MuiPickersUtilsProvider>
+        <div className="form-group">
+          <label>Interests</label>
+          <input
+            type="text"
+            className="form-control"
+            id="project-location"
+            onChange={(event) => {
+              setProjectLocation(event.target.value);
+            }}
+          />
+        </div>
         <div className="mt-5 d-flex justify-content-center">
           <Button variant="contained" color="primary" type="submit">
             Submit your project
